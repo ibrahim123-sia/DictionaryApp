@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg,#54a5a5,#e1ffea22 75%);
+    width: 100vw;
+}
+
+header{
+    background-color: #008080;
+    padding: 15px;
+    color: white;
+}
+.h1{
+    font-size: 26px;
+    font-weight: 600;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main{
+    min-height: 88vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+.main form {
+    display: flex;
+    justify-content: center;
+}
+.form input[type= "text"], button[type="submit"]{
+    border: none;
+    font-size:16px ;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px;
+    
+}
+.form input[type= "text"]{
+    flex-grow: 1;
+    background-color: white;
+
+}
+.footer{
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+.form button[type="submit"]{
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+}
+
+.result p{
+    margin-top: 10px;
+}
+
+.result{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 8px rgba(0,0,0.2);
+}
+.result p[class="partOfSpeech"]{
+    font-style: italic;        
+    margin-top: 2px;
+    color: #808080;
+}
+.result div{
+    margin-top: 20px;
+}
+.result div a{
+    text-decoration: none;
+    background-color: #008080;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size:16px ;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 8px;
+
+}
+.result li{
+    padding: 3px;
+    margin-left: 20px;
+
+
+}
+
+@media screen and (max-width:320px) {
+    
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    form button[type="submit"]{
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+}
+
+
+
+
+
+
